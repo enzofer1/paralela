@@ -1,0 +1,15 @@
+tentei realizar DIVERSAS mudanças no meu código original do ep1 em C entre elas:
+-armazenar os valores de x e y em vetores alocados dinamicamente
+-modularizar os cálculos em funções
+-mudar as variáveis de float para double
+
+Entretanto, as únicas mudanças que melhoraram a performance, mesmo que de maneira muito pequena, foi utilizar as flags
+-O3 e -ffast-math
+A flag -O3 utiliza artefatos do compilador para que o código seja mais rápido e a -ffast-math agiliza operações matemáticas.
+
+Além disso, a mudança de "i++" para "++i" no loop for também alterou um pouco a performance. Após pesquisa na
+internet, descbori que na implementação do i++, por ser um pós incremento, é necessário a criação de uma variável
+auxiliar para utilizar o valor antigo da variável após ser incrementada, enquanto que em ++i isso não ocorre.
+
+O uso da biblioteca math.h para potenciação não afetou o desempenho do código, assim utilizei-a ao invés de realizar a
+potenciação manualmente.

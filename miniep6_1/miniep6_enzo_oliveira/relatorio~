@@ -1,0 +1,4 @@
+Nome: Enzo Oliveira Fernandes
+NUSP: 12563752
+
+Neste miniEP foi utilizada a técnica de blocagem para acelerar a execução da multiplicação de matrizes. Fazendo o uso dssa técnica, nós dividimos as matrizes em espécies de "blocos menores", de forma a computar por vez uma quantidade de elementos que caibam na memória cache, tendo assim uma taxa maior de cache hits, não sendo necessário buscar os dados na memória ram e, consequentemente, tendo uma execução mais rápida. 
